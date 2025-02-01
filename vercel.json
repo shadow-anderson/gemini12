@@ -5,13 +5,11 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "outputDirectory": "build",
-        "includeFiles": ["build/**"]
+        "outputDirectory": "build"
       }
     }
   ],
   "routes": [
-    { "handle": "filesystem" },
     { "src": "/.*", "dest": "/index.html" }
   ]
 } 
