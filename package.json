@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+    "build": "react-scripts build && copy public\\_redirects build\\"
   },
   "browserslist": {
     "production": [
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.26.7",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/preset-env": "^7.26.7",
     "@babel/preset-react": "^7.26.3",
     "assert": "^2.1.0",
@@ -44,5 +45,6 @@
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
-  }
+  },
+  "homepage": "."
 }
